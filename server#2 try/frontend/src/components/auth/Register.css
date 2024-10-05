@@ -1,0 +1,92 @@
+/* Register.css */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 400px; /* Set max width for the container */
+  margin: auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center; /* Center align the heading */
+}
+
+.register-container form {
+  width: 100%;
+}
+
+.register-container input,
+.register-container select,
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-container button {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.register-container .message {
+  margin-top: 15px;
+  color: #dc3545;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-container h2 {
+    font-size: 1.5em; /* Reduce font size for smaller screens */
+  }
+
+  .register-container input,
+  .register-container select,
+  .register-container button {
+    font-size: 14px; /* Adjust font size for inputs and buttons */
+  }
+}
+
+@media (max-width: 400px) {
+  .register-container {
+    max-width: 100%; /* Allow full width on very small screens */
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .register-container h2 {
+    font-size: 1.3em; /* Smaller heading size for very small screens */
+  }
+
+  .register-container input,
+  .register-container select,
+  .register-container button {
+    font-size: 12px; /* Smaller font size */
+  }
+}
